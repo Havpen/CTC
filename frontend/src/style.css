@@ -1,0 +1,41 @@
+main {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.lead {
+  margin-top: 0;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+.error {
+  color: #9b1c1c;
+}
+
+.up {
+  color: #087443;
+}
+
+.down {
+  color: #9b1c1c;
+}
+
+output {
+  display: grid;
+  gap: 0.35rem;
+}
+
+@media (min-width: 960px) {
+  main {
+    grid-template-columns: 1.4fr 0.8fr;
+    align-items: start;
+  }
+
+  h1,
+  .lead {
+    grid-column: 1 / -1;
+  }
+}
